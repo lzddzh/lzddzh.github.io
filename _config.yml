@@ -36,13 +36,13 @@ excerpt_separator: <!--more-->
 paginate: 10
 
 #### Site
-title : Yitao's Blog
-tagline: A technology blog for myself.
+title: Tony Liu 
+tagline: A happy coder. 
 assets: /assets
 baseurl:
 
 #### Language
-language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
+language: en    ## blog site languages: en, zh-CN, zh-TW
 
 #### Menu
 menu:
@@ -76,7 +76,7 @@ imglogo:
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+author_img: img/myPhoto.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 
 #### index post is expanding or not 
@@ -90,20 +90,20 @@ share_button: true #enable share buttons if true
 
 #### Author information
 author:
-  name: yitao      ## e.g. wuchong Author name
-  intro_line1:  "Hello, I'm Yitao in SYSU."    ## your introduction on the bottom of the page
-  intro_line2:  "Too simple, sometimes naive."  ## the 2nd line
-  weibo: 1836017133      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  weibo_verifier: 8266a57e  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
-  tsina: 1836017133      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban: 62234732     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu: yaoyit      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email: simpleyyt@gmail.com      ## e.g. imjark@gmail.com
+  name:       ## e.g. wuchong Author name
+  intro_line1:  "Every person has two educations, one which he receives from others,"    ## your introduction on the bottom of the page
+  intro_line2:  " and one, more important, which he gives himself. "  ## the 2nd line
+  weibo:       ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier:   ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina:       ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban:      ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu:       ## e.g. jark  for http://www.zhihu.com/people/jark
+  email: zhendong.nus@gmail.com      ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github: simpleyyt     ## e.g. wuchong for https://github.com/wuchong
+  github: lzddzh     ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
-  google_plus: "103860633659538888207"    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  google_plus:     ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
   stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
@@ -116,13 +116,12 @@ toc:
 
 #### Links
 links:
-  CoolShell: http://coolshell.cn
-  Jark's Blog: http://wuchong.me
+  NUS School of Computing: https://www.comp.nus.edu.sg 
 
 #excerpt_separator: <!--more-->
 
 #### Comment
-duoshuo_shortname: simpleyyt   ## e.g. wuchong   your duoshuo short name.
+duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
@@ -133,9 +132,9 @@ jiathis:
 
 #### Analytics
 google_analytics:
-  enable: true
-  id: UA-67994495-1        ## e.g. UA-46321946-2 your google analytics ID.
-  site: auto      ## e.g. wuchong.me your google analytics site or set the value as auto.
+  enable: false 
+  id:         ## e.g. UA-46321946-2 your google analytics ID.
+  site:       ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
@@ -152,7 +151,7 @@ totop: true           ## if you want to scroll to top in every post set the valu
 #### Custom Search
 google_cse: 
   enable: true
-  cx: 004255214185073801838:_icnlls8kds  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as

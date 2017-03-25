@@ -4,7 +4,7 @@ type: page
 title: About me
 ---
 
- * **Name:** 姚奕涛
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **Name:** Zhendong Liu 
+ * **Email:** [zhendong.nus@gmail.com](zhendong.nus@gmail.com)
+ * **Github:** [lzddzh](https://github.com/lzddzh)
+ * **LinkedIn**:https://www.linkedin.com/in/zhendong-liu-79850591/
