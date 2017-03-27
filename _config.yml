@@ -2,14 +2,15 @@
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 #### Code Highlighter
-highlighter: pygments
+#highlighter: pygments
+highlighter: rough
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:day/:title 
 
 #### Markdown Processors
-markdown: redcarpet
+markdown: kramdown #redcarpet
 redcarpet:
   extensions:
     - hard_wrap
@@ -90,7 +91,7 @@ share_button: true #enable share buttons if true
 
 #### Author information
 author:
-  name:       ## e.g. wuchong Author name
+  name: Tony Liu       ## e.g. wuchong Author name
   intro_line1:  "Every person has two educations, one which he receives from others,"    ## your introduction on the bottom of the page
   intro_line2:  " and one, more important, which he gives himself. "  ## the 2nd line
   weibo:       ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895

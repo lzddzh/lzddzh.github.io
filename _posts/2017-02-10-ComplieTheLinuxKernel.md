@@ -1,6 +1,5 @@
-
 ---
-title: 'Leetcode 479. Largest Palindrome Product'
+title: 'Build Linux Kernel'
 layout: post
 tags:
   - Linux Kernel
@@ -32,7 +31,7 @@ In this report, we will describe the whole workflow of installing a specific Lin
 It is pretty easy to download the Virtual Box and install it. No need for me to give unnecessary details in this section. Just show you the screen shot of the Ubuntu16.04 inside the virtual box as below.
 
 I found that at the creating virtual machine stage, if we choose the `vmdk` format instead of `vdi` format of the virtual disk file, then we can also run the same guest image on a VMware. And on my computer, the VMware is much faster than Virtual Box. Since what we did under VMware can also open in Virtual Box, I did all the below tasks under VMware, which provided me a smooth and enjoyable virtual machine experience.
-![ubunutu16.04 info](2017-02-10-ComplieTheLinuxKernel/ubuntuInfo.png)
+![ubunutu16.04 info]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/ubuntuInfo.png)
 
 ### Configuration
 After reading the README file provided by Linux kernel 4.6, we now know that before we compile our Linux kernel, we should configure the compiling process by a `.config` file, which contains the key-value pairs to setting whether a specific module will be included in the kernel we build.
@@ -96,7 +95,7 @@ $ diff --unchanged-line-format="" /boot/grub/grub.cfg grub.cfg | grep 4\\.6
 ```
 Use the above command we will see the difference of `grub.cfg`:
 
-![grubChange](grubChange.png)
+![grubChange]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/grubChange.png)
 
 Basically, we can find in the screen shot that the kernel image 4.6.3 was added into the grub, I think the key line here is:
 
@@ -109,7 +108,7 @@ Now every thing is prepared and we just restart our operating system.
 
 Fortunately! my first try succeed!! Our new kernel is up:
 
-![newKernel](newKernel.png)
+![newKernel]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/newKernel.png)
 
 We can see the kernel version by using command `uname -r`, and as the screen shot shows, the Ubuntu16.04 is now starting up with its new kernel 4.6.3.  
 
@@ -128,7 +127,7 @@ Besides, the user can also choose whether to 'put the module into the kernel ima
 - The `excludes` option will not compile the module.
 - The `modularize` option will make the module as a loadable module and will not be put into the kernel image.
 
-![menu](menu.png)
+![menu]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/menu.png)
 
 ## 3. Smallest Kernel Image
 
@@ -140,7 +139,7 @@ $ ls -la | grep init
 ```
 
 And we get:
-![kernelImg](kernelImg.png)
+![kernelImg]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/kernelImg.png)
 
 From the above screen shot we can see that the size of our kernel is **297M**, which is much bigger than the initial kernel **35M**.
 
@@ -280,7 +279,7 @@ Done! Now we have the minimum number of modules configured!
 To give a different name of this minimum kernel image, we open the `.config` file under the root directory of the source code. And set the `CONFIG_LOCALVERSION` to `mini`, which will append `mini` to the kernel image name.
 
 **In File .config:**
-![configName](configName.png)
+![configName]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/configName.png)
 
 Next, we just compile our kernel and install it as we did before:
 
@@ -293,7 +292,7 @@ $ sudo make install
 ### Restart And Enjoy The Mini Kernel
 After restart, we get our Ubuntu16.04 running on a new minimal kernel! The size of the kernel image is only **21MB**.
 
-![mini](mini.png)
+![mini]({{site.url}}/assets/img/postImgs/2017-02-10-ComplieTheLinuxKernel/mini.png)
 
 In the screen shot above, we find the currently using kernel is `Linux4.6.3-mini`, with size 21MB. And there are totally 3 kernels on this system. The original one from Ubuntu16.04, the 'big' 4.6.3 kernel and the 'mini' 4.6.3 kernel. 
 
