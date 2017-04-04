@@ -1,40 +1,25 @@
-# Tony Liu's Personal Blog 
+# Tony Liu's Technical Blog 
 
-##本地搭建
+A blog to write down the technics I have learned, in case of spending time on studying one thing twice.
 
-确保已安装`Ruby 2.1.0` 或更高版本：
+## Deploy
 
-```sh
-ruby --version
-```
-
-安装`Bundler`：
+**Dependencies:**
 
 ```sh
+ruby --version  # should >= 2.2
 gem install bundler
+bundle install # in the root folder of this repo.
 ```
 
-下载 Jacman 主题：
-
-```sh
-git clone https://github.com/Simpleyyt/jekyll-jacman.git
-cd jekyll-jacman
-```
-
-安装依赖：
-
-```sh
-bundle install
-```
-
-运行 Jekyll：
+**Run:**
 
 ```sh
 bundle exec jekyll server
 ```
 
-更多细节可以参考：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+Please refer to [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) for more detail about jekyll.
 
-## 
+## License
 
-This is a fork from [jekyll-jackman](https://github.com/Simpleyyt/jekyll-jacman), which use MIT license.
+Great thanks to theme [jekyll-jackman](https://github.com/Simpleyyt/jekyll-jacman.git) provided by Simpleryyt, which use MIT license.
