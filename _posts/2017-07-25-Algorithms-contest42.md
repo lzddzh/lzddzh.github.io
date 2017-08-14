@@ -8,7 +8,8 @@ tags:
 category: Algorithms 
 ---
 
-Implement pow(x, n).
+Useful code: Judge whether string A is a prefix of string B.
+
 
 <!--more-->
 
