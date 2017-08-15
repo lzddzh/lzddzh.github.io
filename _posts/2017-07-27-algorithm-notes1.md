@@ -1,8 +1,9 @@
 ---
-title: 'Leetcode 86. Partition List
-'
+title: 'Pointer's Pointer Notes'
 layout: post
 tags:
+  - leetcode
+  - notes
   - C++
 
 category: C/C++
