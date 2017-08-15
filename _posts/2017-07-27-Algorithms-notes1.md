@@ -3,9 +3,8 @@ title: 'Notes: Pointer's Pointer'
 layout: post
 tags:
   - leetcode
-  - notes
+  - learning notes
   - C++
-
 category: C/C++
 ---
 
