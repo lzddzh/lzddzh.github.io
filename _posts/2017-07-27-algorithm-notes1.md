@@ -1,5 +1,5 @@
 ---
-title: 'Pointer's Pointer Notes'
+title: 'Notes: Pointer's Pointer'
 layout: post
 tags:
   - leetcode
@@ -44,8 +44,8 @@ int main() {
     (*p) = (*p)->next;
     p = &((*p)->next);
 
-	// Now, 1 -> 3 -> NULL;
-	//      n1   n3
+    // Now, 1 -> 3 -> NULL;
+    //      n1   n3
 
     while (n1) {
         cout << n1->val << endl;
@@ -67,55 +67,55 @@ The output of this program is:
 When the linked list is built, it looks like this in memory:
 
 ```
-	----
+    ----
 000 val 
-	----
+    ----
 001 002  
-	----
+    ----
 002 val
-	----
+    ----
 003 003
-	----
+    ----
 004 val
-	----
+    ----
 005 NULL
-	----
+    ----
 006
-	----
-	
-	
-	...
-	
-	----
-101	000  n1
-	----
+    ----
+    
+    
+    ...
+    
+    ----
+101 000  n1
+    ----
 102 002  n2
-	----
+    ----
 103 004  n3
-	----
+    ----
 104 101  p
-	----
+    ----
 105
-	----
+    ----
 106
-	----
+    ----
 ```
 After the code `p = &((*p)->next);`, the memoery between address 000 - 006 remains, while the memory stores pointers becomeslike this:
 
 ```
-	----
-101	000  n1
-	----
+    ----
+101 000  n1
+    ----
 102 002  n2
-	----
+    ----
 103 004  n3
-	----
+    ----
 104 001  p  (Now p stores the addres of pointer n1->next)
-	----
+    ----
 105
-	----
+    ----
 106
-	----
+    ----
 ```
 
 Now p stores the addres of pointer n1->next, so change (*p) will change the value stored in pointer n1->next;
@@ -123,21 +123,21 @@ Now p stores the addres of pointer n1->next, so change (*p) will change the valu
 And then after the code `(*p) = (*p)->next;`：
 
 ```
-	----
+    ----
 000 val 
-	----
+    ----
 001 004  
-	----
+    ----
 002 val
-	----
+    ----
 003 003
-	----
+    ----
 004 val
-	----
+    ----
 005 NULL
-	----
+    ----
 006
-	----
+    ----
 
 ```
 
